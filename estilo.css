@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25vw 45vw 10vw;
+    grid-template-areas: 
+    "h h"
+    "c c"
+    "r r";
+}
+
+header{
+    grid-area: h;
+    color: white;
+    background-image: url(ImgInc/cabe.png);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo img{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 40px;
+    width: 73px;
+}
+
+
+.menu{
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.btn{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.btn1{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-weight: 600;
+    padding: 8px 20px 10px 20px;
+    border-radius: 50px;
+}
+
+.btn2{
+    text-decoration: none;
+    background-color: red;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-weight: 600;
+    padding: 8px 20px 10px;
+    border-radius: 50px;
+}
+
+.btn3{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: white;
+    box-shadow: 0px 2px 4px #9f9f9f;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 8px 40px 10px 40px;
+    border-radius: 50px;
+}
+
+
+main{
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #FFFFFF 3.12%, #b5b5b5 99%);
+    padding-top: 30px;
+}
+
+.titu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titu h1{
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.linha{
+    width: 90vw;
+    height: 2.5px;
+    background-color: #ff0000;
+    box-shadow: #ff0000 0px 0px 4px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px 60px 0 60px;
+}
+
+.ctext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctext h1{
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.ctext p{
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+footer{
+    background-color: #b5b5b5;
+    grid-area: r;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: solid rgb(161, 161, 161);
+}
+
+footer > ul{
+    list-style-type: none;
+    display: flex;
+}
+
+footer > ul > li{
+    padding: 16px;
+}
+
+footer > p{
+    font-size: 0.6rem;
+    color: gray;
+}

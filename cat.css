@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25vw 100% 10vw;
+    grid-template-areas: 
+    "h h"
+    "c c"
+    "r r";
+}
+
+header{
+    grid-area: h;
+    color: white;
+    background-image: url(ImgCat/cabeCat.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo img{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 40px;
+    width: 73px;
+}
+
+main{
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #FFFFFF 3.12%, #b5b5b5 99%);
+    padding-top: 30px;
+}
+
+.titu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titu h1{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.linha{
+    width: 90vw;
+    height: 2.5px;
+    background-color: #ff0000;
+    box-shadow: #ff0000 0px 0px 4px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.linha1{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}   
+
+.linha2{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    border: solid black;
+    width: 15vw;
+    height: 20vw;
+}
+
+.cardinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardnome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardnome h1{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer{
+    background-color: #b5b5b5;
+    grid-area: r;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: solid rgb(161, 161, 161);
+}
+
+footer > ul{
+    list-style-type: none;
+    display: flex;
+}
+
+footer > ul > li{
+    padding: 16px;
+}
+
+footer > p{
+    font-size: 0.6rem;
+    color: gray;
+}
