@@ -14,11 +14,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    height: 10vw;
+    height: 6vw;
 }
 
 .bvolt{
-    margin: 20px;
+    margin: 1vw;
 }
 
 .volt img{
@@ -38,15 +38,15 @@ body{
 }
 
 .tiace p{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
     color: rgb(166, 166, 166);
     font-size: 0.8em;
 }
 
 .linha1{
     width: 20vw;
-    height: 1px;
+    height: 0.1vw;
     background-color: rgb(212, 212, 212);
 }
 
@@ -54,14 +54,14 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
 }
 
 .social > i{
     font-size: 2rem;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
     cursor: pointer;
 }
 
@@ -72,15 +72,15 @@ body{
 }
 
 .tilog p{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
     color: rgb(166, 166, 166);
     font-size: 0.8em;
 }
 
 .linha2{
     width: 20vw;
-    height: 1px;
+    height: 0.1vw;
     background-color: rgb(212, 212, 212);
 }
 .log{
@@ -100,11 +100,11 @@ fieldset{
 .barra{
     width: 70%;
     height: 10%;
-    padding-left: 10px;
-    border-radius: 10px;
+    padding-left: 1vw;
+    border-radius: 1vw;
     border-style: solid;
     border-color: #9c9c9c;
-    margin-top: 15px;
+    margin-top: 1vw;
 }
 
 input[type="email"]:valid,
@@ -112,7 +112,7 @@ input[type="password"]:valid{
     background-image: url(ImgLog/check.svg);
     background-repeat: no-repeat;
     background-position: 98% 45%;
-    background-size: 20px;
+    background-size: 1.5vw;
 }
 
 input[type="email"]:invalid,
@@ -120,11 +120,11 @@ input[type="password"]:invalid{
     background-image: url(ImgLog/exclamation.svg);
     background-repeat: no-repeat;
     background-position: 98% 45%;
-    background-size: 20px;
+    background-size: 1.5vw;
 }
 
 input[type="submit"]{
-    padding: 10px 20px 10px 20px;
+    padding: 1vw 1.5vw 1vw 1.5vw;
     border-radius: 50px;
     border-style: solid;
     width: 70%;
@@ -132,6 +132,6 @@ input[type="submit"]{
     background-color: red;
     font-size: 1.5em;
     font-weight: 600;
-    margin-top: 25px;
+    margin-top: 2vw;
     cursor: pointer;
 }

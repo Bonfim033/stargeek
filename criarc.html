@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="criarc.css">
+    <link rel="stylesheet" media="screen and (min-width: 426px)" href="criarcdesk.css">
+    <link rel="stylesheet" media="screen and (max-width: 426px)" href="criarcmob.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +15,11 @@
 <body>
     <!-- botao de voltar -->
     <div class="volt">
-        <div class="bvolt">
+        <a class="bvolt" href="http://127.0.0.1:5500/index.html">
             <img src="ImgLog/seta.png" alt="">
-            <a href="http://127.0.0.1:5501/index.html">Voltar</a>
-        </div>
+            Voltar
+        </a>
     </div>
-
-
 
     <!-- formulario -->
     <div class="tiace">
@@ -43,7 +42,7 @@
     </div>
 
     <div class="log">
-        <form action="http://127.0.0.1:5501/cat.html">
+        <form action="http://127.0.0.1:5500/cat.html">
             <fieldset>
                 <input class="barra" id="inome" name="txtnome" type="text" placeholder="Nome" required>
                 <br>
@@ -52,6 +51,7 @@
                 <input class="barra" id="isenha" name="psenha"  type="password" placeholder="Senha" required>
                 <br>
                 <input type="submit" value="Entrar">
+                <p class="termos">Ao criar a conta, você concorda com nossos <a href="#">Termos de Uso</a> e <a href="#">Politica de privacidade</a></p>
             </fieldset>
         </form>
     </div>

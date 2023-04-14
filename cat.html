@@ -5,119 +5,285 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarGeek</title>
-    <link rel="stylesheet" href="cat.css">
+    <link rel="stylesheet" media="screen and (min-width: 426px)" href="catdesk.css">
+    <link rel="stylesheet" media="screen and (max-width: 426px)" href="catmob.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="container">
+<body >
+    <div class="container" >
         <header>
             <div class="logo">
-                <a href="http://127.0.0.1:5501/index.html"><img src="ImgInc/logo.png" alt=""></a>
+                <img src="ImgInc/logo.png" alt="">
             </div>
 
-            <div></div>
+            <div class="busca">
+                <a class="btnbusca" href="#">
+                    <i class="bi bi-search"></i>
+                </a> 
+                <input type="text" name="" placeholder="Pesquisar"> 
+            </div>
 
-            <nav class="conta">
-    
-            </nav>
+            <label for="checkmodalc" class="openbtnc">
+                <img src="ImgCat/Conta.png" alt="conta">
+            </label>
+            <input type="checkbox" id="checkmodalc" class="checkmodalc">
+            <!-- Modal -->
+            <div class="modalc">
+                <!-- Conteudo -->
+                <div class="modalcontc">
+                    <ul class="menu">
+                        <li>Minha Conta</li>
+                        <li>Configurações</li>
+                        <li><a href="http://127.0.0.1:5500/index.html">Sair</a></li>
+                    </ul>
+
+                    <!-- Botao de fechar -->
+                    <label for="checkmodalc" class="closebtnc"><img src="ImgCat/Conta.png" alt="conta"></label>
+                </div>
+            </div>
         </header>
 
         <main>
             <div class="titu">
                 <h1>Minha Lista</h1>
+
+                <div class="info">
+                    <div class="filter">
+                        <i class="bi bi-funnel-fill"></i>
+                        <p>Filtrar</p>
+                    </div>
+
+                    <!-- Botao + -->
+                    <label for="checkmodal" class="openbtn">
+                        <div class="btn">
+                            <i class="fa fa-plus-circle"></i> 
+                            <p>Adicionar</p>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="checkmodal" class="checkmodal">
+                    <!-- Modal -->
+                    <div class="modal">
+                        <!-- Botao de fechar -->
+                        <label for="checkmodal" class="closebtn"><i class="bi bi-x-lg"></i></label>
+                        <!-- Conteudo -->
+                        <div class="modalcont">
+                            <img src="ImgAdd/Rectangle.png" alt="">
+
+                            <div>
+                                <form action="http://127.0.0.1:5500/cat.html">
+                                    <fieldset>
+                                        <label for="inome">Nome:</label>
+                                        <input class="barra" id="inome" name="txtnome" type="text">
+                                        <label for="ifale">Resumo:</label>
+                                        <textarea name="txtafale" id="ifale" cols="50" rows="6"></textarea>
+                                        <div class="cardavm">
+                                            <p>Avaliação:</p>
+                                            <div class="avm">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                        <button><i class="fa fa-plus-circle"></i> Adicionar</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="linha"></div>
             </div>
 
             <div class="cards">
-                <div class="linha1">
-                    <!-- Card 1 -->
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="" alt="">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="ImgCat/img1.png" alt="">
+                    </div>
+                    <div class="cardinfo">
+                        <div class="cardnome">
+                            <p>Nome</p>
+                            <h1>Star Wars: Episódio I</h1>
                         </div>
-                        <div class="cardinfo">
-                            <div class="cardnome">
-                                <p>Nome</p>
-                                <h1>Star Wars: Episódio I – A Ameaça Fantasma</h1>
-                            </div>
-                            <div class="cardav">
-                                <p>Avaliação</p>
-                                <div class="av"></div>
+                        <div class="cardav">
+                            <p>Avaliação</p>
+                            <div class="av">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 2 -->
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="" alt="">
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="ImgCat/img2.png" alt="">
+                    </div>
+                    <div class="cardinfo">
+                        <div class="cardnome">
+                            <p>Nome</p>
+                            <h1>Coringa</h1>
                         </div>
-                        <div class="cardinfo">
-                            <div class="cardnome">
-                                <p>Nome</p>
-                                <h1>Coringa</h1>
-                            </div>
-                            <div class="cardav">
-                                <p>Avaliação</p>
-                                <div class="av"></div>
+                        <div class="cardav">
+                            <p>Avaliação</p>
+                            <div class="av">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 3 -->
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="" alt="">
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="ImgCat/img3.png" alt="">
+                    </div>
+                    <div class="cardinfo">
+                        <div class="cardnome">
+                            <p>Nome</p>
+                            <h1>Vingadores: Ultimato</h1>
                         </div>
-                        <div class="cardinfo">
-                            <div class="cardnome">
-                                <p>Nome</p>
-                                <h1>Vingadores: Ultimato</h1>
-                            </div>
-                            <div class="cardav">
-                                <p>Avaliação</p>
-                                <div class="av"></div>
+                        <div class="cardav">
+                            <p>Avaliação</p>
+                            <div class="av">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 4 -->
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="" alt="">
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="ImgCat/img4.png" alt="">
+                    </div>
+                    <div class="cardinfo">
+                        <div class="cardnome">
+                            <p>Nome</p>
+                            <h1>Homem-Aranha: De Volta ao Lar</h1>
                         </div>
-                        <div class="cardinfo">
-                            <div class="cardnome">
-                                <p>Nome</p>
-                                <h1>Homem-Aranha: De Volta ao Lar</h1>
-                            </div>
-                            <div class="cardav">
-                                <p>Avaliação</p>
-                                <div class="av"></div>
+                        <div class="cardav">
+                            <p>Avaliação</p>
+                            <div class="av">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 5 -->
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="" alt="">
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="ImgCat/img5.png" alt="">
+                    </div>
+                    <div class="cardinfo">
+                        <div class="cardnome">
+                            <p>Nome</p>
+                            <h1>Guardiões da Galáxia</h1>
                         </div>
-                        <div class="cardinfo">
-                            <div class="cardnome">
-                                <p>Nome</p>
-                                <h1>Guardiões da Galáxia</h1>
-                            </div>
-                            <div class="cardav">
-                                <p>Avaliação</p>
-                                <div class="av"></div>
+                        <div class="cardav">
+                            <p>Avaliação</p>
+                            <div class="av">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <!-- Card 6 -->
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="ImgCat/img6.png" alt="">
+                    </div>
+                    <div class="cardinfo">
+                        <div class="cardnome">
+                            <p>Nome</p>
+                            <h1>The last of us</h1>
+                        </div>
+                        <div class="cardav">
+                            <p>Avaliação</p>
+                            <div class="av">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="ImgCat/img7.png" alt="">
+                    </div>
+                    <div class="cardinfo">
+                        <div class="cardnome">
+                            <p>Nome</p>
+                            <h1>God of war ragnarok</h1>
+                        </div>
+                        <div class="cardav">
+                            <p>Avaliação</p>
+                            <div class="av">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="ImgCat/img8.png" alt="">
+                    </div>
+                    <div class="cardinfo">
+                        <div class="cardnome">
+                            <p>Nome</p>
+                            <h1>The Witcher: Volume 2</h1>
+                        </div>
+                        <div class="cardav">
+                            <p>Avaliação</p>
+                            <div class="av">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
