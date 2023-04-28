@@ -317,10 +317,10 @@ button{
 
 .cards {
     margin-top: 1.5vw;
+    margin-left: 7vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .card{
