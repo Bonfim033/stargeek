@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <button id="btn">Cadastrar Item</button>
+        <div class="mensagem"></div>
+        <div class="cards">
+        </div>
+
+        <div class="cadmodal">
+            <div class="modal">
+            <form action="" id="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="descricao">Descrição</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto">
+                <button class="btncadastrar"> Cadastrar</button>
+                <button class="btneditar">Editar</button>
+                <!-- hidden = guardar informação -->
+                <input type="hidden" id="idalterar">
+            </form>
+            <button id="btnclose" onclick="fechar()">Fechar</button>
+        </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

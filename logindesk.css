@@ -83,9 +83,18 @@ body{
     height: 0.1vw;
     background-color: rgb(212, 212, 212);
 }
+
+.mensagem{
+    color: red;
+    margin-top: 1vw;
+    
+}
+
 .log{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 fieldset{
@@ -123,7 +132,7 @@ input[type="password"]:invalid{
     background-size: 1.5vw;
 }
 
-input[type="submit"]{
+button{
     padding: 1vw 1.5vw 1vw 1.5vw;
     border-radius: 50px;
     border-style: solid;
