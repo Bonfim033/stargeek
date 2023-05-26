@@ -49,7 +49,7 @@ botaocadastrar.onclick = (evento) => {
 function carregarCatalogo() {
     let dados = JSON.parse(localStorage.getItem("catalogo"));
     let divcard = document.createElement("div") 
-    if (dados == ""){
+    if (dados == null){
         divcard.innerHTML = "<p> Nenhum item encontrado </p>";
         cards.appendChild(divcard)
         return null
