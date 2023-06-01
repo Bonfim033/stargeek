@@ -27,6 +27,16 @@
             </div>
 
             <img class="imgc" src="ImgCat/Conta.png" alt="conta">
+            <div class="cadmodalc">
+                <div class="modalc">
+                <button id="btnclosec" onclick="fecharc()"><img class="closebtnc" src="ImgCat/Conta.png" alt="conta"></button>
+                <ul class="menu">
+                    <li>Minha Conta</li>
+                    <li>Configurações</li>
+                    <li><button class="btnsair">Sairs</button></li>
+                    <input type="hidden" id="idalterar">
+                </ul>
+            </div>
         </header>
 
         <main>
@@ -49,22 +59,31 @@
             </div>
 
             <div class="cadmodal">
-                <fieldset>
-                    <div class="modal">
-                    <form action="" id="formulario">
+                <div class="modal">
+                <button id="btnclose" onclick="fechar()"><i class="bi bi-x-lg"></i></button>
+                <form action="" id="formulario">
+                    <fieldset>
+                        <div class="foto"><input type="file" name="foto" id="foto"></div>                        
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome">
                         <label for="descricao">Descrição</label>
                         <textarea name="descricao" id="descricao" cols="50" rows="6"></textarea>
-                        <label for="foto">Foto</label>
-                        <input type="file" name="foto" id="foto">
+                        <div class="cardavm">
+                            <p>Avaliação:</p>
+                            <div class="avm">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
                         <button class="btncadastrar"> Cadastrar</button>
                         <button class="btneditar">Editar</button>
                         <!-- hidden = guardar informação -->
                         <input type="hidden" id="idalterar">
                     </fieldset>
                 </form>
-                <button id="btnclose" onclick="fechar()">Fechar</button>
             </div>
         </main>
 

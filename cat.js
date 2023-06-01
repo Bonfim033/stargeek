@@ -10,6 +10,9 @@ const botaoeditar = document.querySelector(".btneditar");
 const botaofechar = document.querySelector(".btnclose");
 const idelemento = document.getElementById("idalterar");
 
+var emaillogado;
+femailLogado();
+
 carregarCatalogo()
 
 botaomodal.onclick = () =>{
@@ -35,7 +38,8 @@ botaocadastrar.onclick = (evento) => {
                 {
                     nome : nome.value,
                     descricao : descricao.value,
-                    foto : nomeArq
+                    foto : nomeArq,
+                    email : emaillogado
                 }
             )
             localStorage.setItem("catalogo", JSON.stringify(dados));
@@ -56,16 +60,20 @@ function carregarCatalogo() {
     }
 
     dados.forEach((elemento, indice) => {
+        if(elemento.email == emaillogado){
         let divcard = document.createElement("div")
+        divcard.setAttribute("class", "card")
         divcard.innerHTML = 
-        `<div class="cardimagem"><img src="img/${elemento.foto}"></div>
-        <div class="cardnome">${elemento.nome}
-        <p>${elemento.descricao}</p></div>
+        `<div class="cardimg"><img src="img/${elemento.foto}"></div>
         <div class="cardinfo">
-        <div class="editar"><i class="bi bi-pencil-fill" onclick="editar(${indice})"></i></div>
-        <div class="excluir"><i class="bi bi-trash3-fill" onclick="excluir(${indice})"></i></div>
+            <p>Nome</p>
+            <div class="cardnome">${elemento.nome}</div>
+            <div class="edt">
+                <div class="editar"><i class="bi bi-pencil-fill" onclick="editar(${indice})"></i></div>
+                <div class="excluir"><i class="bi bi-trash3-fill" onclick="excluir(${indice})"></i></div>
+            </div>
         </div>`
-        cards.appendChild(divcard);
+        cards.appendChild(divcard);}
     });
 }
 
@@ -108,6 +116,7 @@ function salvarEdicao(pfoto){
     dados[idelemento.value].nome = nome.value;
     dados[idelemento.value].descricao = descricao.value;
     dados[idelemento.value].foto = pfoto;
+    dados[idelemento.value].email = emaillogado;
     localStorage.setItem("catalogo", JSON.stringify(dados));
 }
 
@@ -144,5 +153,15 @@ async function fenvio() {
     catch (error) {
         console.error(error);
         return false;
+    }
+}
+
+function femailLogado() {
+    let dados = sessionStorage.getItem("logado");
+    if (dados == null) {
+        window.location.assign("login.html");
+    }
+    else {
+        emaillogado = dados;
     }
 }
