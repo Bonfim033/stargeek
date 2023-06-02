@@ -11,7 +11,7 @@ formulario.onsubmit = (evt)=>{
             msg.innerHTML = "Aguarde redirecionando..."
             sessionStorage.setItem("logado", email.value);
             setTimeout(()=>{
-                window.location.assign("cat2.html");
+                window.location.assign("cat.html");
             }, 2000);
             evt.preventDefault();
             logado = "ok";
