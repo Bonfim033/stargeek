@@ -27,16 +27,19 @@
                 <input type="text" name="" placeholder="Pesquisar"> 
             </div>
 
-            <img class="imgc" src="ImgCat/Conta.png" alt="conta">
-            <div class="cadmodalc">
-                <div class="modalc">
-                <button id="btnclosec" onclick="fecharc()"><img class="closebtnc" src="ImgCat/Conta.png" alt="conta"></button>
-                <ul class="menu">
-                    <li>Minha Conta</li>
-                    <li>Configurações</li>
-                    <li><button class="btnsair">Sairs</button></li>
-                    <input type="hidden" id="idalterar">
-                </ul>
+            <div>
+                <button id="btnc"><img class="imgc" src="ImgCat/Conta.png" alt="conta"></button>
+                <div class="cadmodalc">
+                    <div class="modalc">
+                    <ul class="menu">
+                        <li>Minha Conta</li>
+                        <li>Configurações</li>
+                        <li><a href="index.html">Sair</a></li>
+                        <input type="hidden" id="idalterar">
+                    </ul>
+                    <button id="btnclosec" onclick="fecharc()"><img class="imgc" src="ImgCat/Conta.png" alt="conta"></button>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -64,11 +67,11 @@
                 <button id="btnclose" onclick="fechar()"><i class="bi bi-x-lg"></i></button>
                 <form action="" id="formulario">
                     <fieldset>
-                        <div class="foto"><input type="file" name="foto" id="foto"></div>                        
+                        <div class="foto"><input type="file" name="foto" id="foto"></div>                       
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome">
                         <label for="descricao">Descrição</label>
-                        <textarea name="descricao" id="descricao" cols="50" rows="6"></textarea>
+                        <textarea name="descricao" id="descricao" cols="40" rows="6"></textarea>
                         <div class="cardavm">
                             <p>Avaliação:</p>
                             <div class="avm">

@@ -9,11 +9,24 @@ const botaocadastrar = document.querySelector(".btncadastrar");
 const botaoeditar = document.querySelector(".btneditar");
 const botaofechar = document.querySelector(".btnclose");
 const idelemento = document.getElementById("idalterar");
+const mensagem = document.querySelector(".mensagem")
+
+const botaomodalc = document.getElementById("btnc");
+const cadmodalc = document.querySelector(".cadmodalc");
+const botaofecharc = document.querySelector(".btnclosec");
 
 var emaillogado;
 femailLogado();
 
 carregarCatalogo()
+
+botaomodalc.onclick = () =>{
+    cadmodalc.style.display = "flex";
+}
+
+function fecharc(){
+    cadmodalc.style.display = "none";
+}
 
 botaomodal.onclick = () =>{
     nome.value = "";
@@ -53,9 +66,9 @@ botaocadastrar.onclick = (evento) => {
 function carregarCatalogo() {
     let dados = JSON.parse(localStorage.getItem("catalogo"));
     let divcard = document.createElement("div") 
-    if (dados == null){
+    if (dados == ""){
         divcard.innerHTML = "<p> Nenhum item encontrado </p>";
-        cards.appendChild(divcard)
+        mensagem.appendChild(divcard)
         return null
     }
 
@@ -68,6 +81,14 @@ function carregarCatalogo() {
         <div class="cardinfo">
             <p>Nome</p>
             <div class="cardnome">${elemento.nome}</div>
+            <p>Avaliação</p>
+            <div class="av">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
             <div class="edt">
                 <div class="editar"><i class="bi bi-pencil-fill" onclick="editar(${indice})"></i></div>
                 <div class="excluir"><i class="bi bi-trash3-fill" onclick="excluir(${indice})"></i></div>
